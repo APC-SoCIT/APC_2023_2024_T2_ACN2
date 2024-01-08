@@ -1,14 +1,13 @@
 import React from 'react';
-import Login from './Components/Login';
-import logo from './Assets/logo.png'; // Replace with your actual logo path
+import AdminHomepage from './Pages/Admin/AdminHomepage';
 
-const App = () => {
+
+function App() {
   return (
-    <div style={{ backgroundColor: '#FFFFFF', minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-      <img src={logo} alt="Logo" style={{ maxWidth: '100%', marginBottom: '20px' }} />
-      <Login />
+    <div className="App">
+      <AdminHomepage/>
     </div>
   );
-};
+}
 
 export default App;
